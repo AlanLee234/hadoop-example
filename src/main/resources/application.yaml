@@ -1,0 +1,18 @@
+hadoop:
+    hdfs:
+        # 对象池最大空闲
+        maxIdle: 5
+        # 对象池最大总数
+        maxTotal: 20
+        # 对象池最小空闲
+        minIdle: 2
+        # 对象池初始化连接数
+        initialSize: 3
+        # hdfs defaultFs
+        defaultFs: hdfs://localhost:9000 #hdfs://nameservices
+        # hdfs HA设置，非HA可不写
+        #nameservices: nameservices
+        # hdfs HA设置，非HA可不写
+        #ha: namenode1,namenode2
+        # hdfs HA设置，非HA可不写
+        #rpcAddress: 172.0.0.1:8020,172.0.0.2:8020
