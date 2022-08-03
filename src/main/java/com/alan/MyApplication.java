@@ -9,6 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan("com.alan.*")
 public class MyApplication {
     public static void main(String[] args) {
+        System.out.println("start");
         SpringApplication.run(MyApplication.class, args);
     }
 }
